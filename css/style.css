@@ -1,0 +1,11 @@
+body {
+    margin: 40px auto;
+    max-width: 960px;
+    color: #222;
+    font-family: sans-serif;
+}
+
+h1 {
+    fort-size: 3.0rem;
+    font-weight: 300;
+}
