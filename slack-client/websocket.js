@@ -21,8 +21,9 @@ var connect = function(url) {
     connection = new WebSocket(url);
     // Log messages from the server
     connection.onmessage = function (e) {
-        console.log(e);
-        putMsg("Server", e.data);
+	var data = JSON.parse(e.data)
+        console.log(data);
+        putMsg("Server", data.type);
     };
     // Log errors
     connection.onerror = function (error) {
